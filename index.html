@@ -1,4 +1,4 @@
 <script type="text/javascript">
-  document.addEventListener('click', function(e) { console.log('first, cancel'); e.stopPropagation() })
-  document.addEventListener('click', function(e) { console.log('last, cancel'); e.stopPropagation() })
+  document.addEventListener('click', function(e) { console.log('document'); e.stopPropagation() })
+  document.body.addEventListener('click', function(e) { console.log('body'); e.stopPropagation() })
 </script>

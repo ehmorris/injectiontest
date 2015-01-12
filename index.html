@@ -1,3 +1,4 @@
 <script type="text/javascript">
-  document.addEventListener('click', function() { return false })
+  document.addEventListener('click', function() { console.log('first, cancel'); return false })
+  document.addEventListener('click', function() { console.log('last, cancel'); return false })
 </script>

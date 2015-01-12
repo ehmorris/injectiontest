@@ -1,8 +1,8 @@
-<script type="text/javascript">
-  document.addEventListener('click', function(e) { console.log('document'); e.stopPropagation() })
-  document.querySelectorAll('body').addEventListener('click', function(e) { console.log('body'); e.stopPropagation() })
-</script>
-
 <style> body { background: red } </style>
 
 <body></body>
+
+<script type="text/javascript">
+  document.addEventListener('click', function(e) { console.log('document'); e.stopPropagation() })
+  document.body.addEventListener('click', function(e) { console.log('body'); e.stopPropagation() })
+</script>
